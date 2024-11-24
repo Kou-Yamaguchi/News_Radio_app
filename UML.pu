@@ -1,0 +1,150 @@
+@startuml test
+
+title 履歴ページ
+
+package view{
+entity "メニューバー" as Menu{
+    ボタンリスト
+    --
+}
+
+
+class "window全体" as Window全体
+Window全体 -- Menu
+
+
+entity "画面変更ボタン" as Change_displayButton{
+    ・is-selected
+    ・color
+    ・アイコン
+    --
+    ・index変更
+}
+
+Menu #-- Change_displayButton
+
+
+entity "メイン画面" as main_display{
+    ・ページリスト　履歴　HOME
+    ・ページindex　0番　1番
+    --
+    ・index変更検知
+    ・表示変更
+}
+
+Window全体 -- main_display
+Change_displayButton -right- main_display
+
+
+entity "ページクラス" as page_class{
+}
+
+main_display #-- page_class
+
+entity "履歴画面" as past_display{
+    ・記事一覧（リスト）
+    ・スクロールバー
+    --
+    ・ID取得
+}
+
+
+page_class <-down- past_display
+
+}
+
+entity "ID取得関数" as ID_get_function{
+    引数：userID
+    出力：日時でソートされた記事ID
+}
+
+past_display <-left- ID_get_function
+
+entity "コンテンツ取得関数" as contents_get_function{
+    引数：記事ID
+    出力：もろもろ
+}
+
+contents_get_function --> ID_get_function
+
+Database <-right-> ID_get_function
+Database <--> contents_get_function
+
+
+
+package view{
+
+entity "記事ボタン" as article_botten{
+    ・view（形、色）
+    ・contents（タイトル）
+    --
+    ・詳細表示
+}
+
+article_botten -up-# past_display
+article_botten --> contents_get_function
+
+
+entity "記事の詳細画面" as article_detail{
+    コンテンツ
+    ・タイトル
+    ・スクリプト
+    ・url
+    --
+    ・url遷移
+}
+
+article_botten <-- article_detail
+article_detail <-- contents_get_function
+
+entity "ホーム画面" as home_display{
+    ・ジャンル一覧
+    ・スクロールバー
+    --
+}
+
+home_display -up-> page_class
+
+entity "ヘッダー" as header{
+    ・ページの名前
+    ・検索バー
+    ・（更新）
+    --
+    ・検索機能
+}
+
+home_display <-right- header
+
+
+entity "ジャンルボタン" as genre_botten{
+    ・view
+    ・ジャンルid
+    ・name
+    --
+    ・ジャンル詳細画面
+}
+
+home_display #-- genre_botten
+
+entity "ジャンル詳細画面" as genre_detail_display{
+    ・記事一覧
+    ・再生ボタン
+    --
+}
+
+genre_detail_display -up-# genre_botten
+article_botten --# genre_detail_display
+
+
+entity "再生ボタン" as start_botten{
+    ・view
+    --
+    ・音声ファイル作成
+}
+
+genre_detail_display #-- start_botten
+
+
+}
+
+@enduml
