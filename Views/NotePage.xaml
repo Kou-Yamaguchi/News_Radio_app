@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:News_Radio_app.ViewModels"
              x:Class="News_Radio_app.Views.NotePage"
+             x:DataType="viewModels:NoteViewModel"
              Title="NotePage">
         <ContentPage.BindingContext>
                 <viewModels:NoteViewModel/>
