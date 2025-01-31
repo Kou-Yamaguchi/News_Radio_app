@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("News_Radio_app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2dee81b2560f8e03befd3fdf004ffe10968de268")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a2ee36704c31585052d03ef33fd24be56e4bcb30")]
 [assembly: System.Reflection.AssemblyProductAttribute("News_Radio_app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("News_Radio_app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9DxryicKm1E=",
+  "dgSpecHash": "7/Fs7g38npY=",
   "success": true,
-  "projectFilePath": "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/News_Radio_app.csproj",
+  "projectFilePath": "/Users/kou/一時保存/news_radio/News_Radio_app/News_Radio_app.csproj",
   "expectedPackageFiles": [
+    "/Users/kou/.nuget/packages/communitytoolkit.mvvm/8.3.2/communitytoolkit.mvvm.8.3.2.nupkg.sha512",
     "/Users/kou/.nuget/packages/googlegson/2.11.0.3/googlegson.2.11.0.3.nupkg.sha512",
     "/Users/kou/.nuget/packages/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "/Users/kou/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",

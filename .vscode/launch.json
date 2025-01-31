@@ -1,0 +1,7 @@
+{
+  "name": "Launch Project",
+  "type": "coreclr",
+  "request": "launch",
+  "program": "${workspaceFolder}/bin/Debug/net7.0-android/YourAppName.dll",
+  "cwd": "${workspaceFolder}"
+}

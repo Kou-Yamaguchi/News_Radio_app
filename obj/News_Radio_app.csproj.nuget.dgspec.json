@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/News_Radio_app.csproj": {}
+    "/Users/kou/一時保存/news_radio/News_Radio_app/News_Radio_app.csproj": {}
   },
   "projects": {
-    "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/News_Radio_app.csproj": {
+    "/Users/kou/一時保存/news_radio/News_Radio_app/News_Radio_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/News_Radio_app.csproj",
+        "projectUniqueName": "/Users/kou/一時保存/news_radio/News_Radio_app/News_Radio_app.csproj",
         "projectName": "News_Radio_app",
-        "projectPath": "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/News_Radio_app.csproj",
+        "projectPath": "/Users/kou/一時保存/news_radio/News_Radio_app/News_Radio_app.csproj",
         "packagesPath": "/Users/kou/.nuget/packages/",
-        "outputPath": "/Users/kou/Desktop/Github_repositorys/news_radio/News_Radio_app/obj/",
+        "outputPath": "/Users/kou/一時保存/news_radio/News_Radio_app/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -56,6 +56,10 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.3.2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -95,6 +99,10 @@
         "net9.0-ios18.0": {
           "targetAlias": "net9.0-ios",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.3.2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -134,6 +142,10 @@
         "net9.0-maccatalyst18.0": {
           "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.3.2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -173,16 +185,7 @@
         }
       },
       "runtimes": {
-        "android-arm64": {
-          "#import": []
-        },
-        "android-x64": {
-          "#import": []
-        },
         "iossimulator-arm64": {
-          "#import": []
-        },
-        "maccatalyst-arm64": {
           "#import": []
         }
       }

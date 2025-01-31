@@ -1,0 +1,26 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+
+# Crash dumps
+*.dmp
+
+
+# Visual Studio working files
+.vs/
+
+# Rider project settings
+.idea/
+
+.DS_store
+*.cache
