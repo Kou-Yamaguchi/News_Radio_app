@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Window xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="News_Radio_app.Views.Home"
              Title="Home">
-</Window>
+
+    <VerticalStackLayout>
+        <Label HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Text="Welcome News Radio App!!"
+               FontSize="30" />
+        
+        <BoxView Color="Black"
+                 HeightRequest="2"
+                 HorizontalOptions="Fill" />
+
+        <Label HorizontalOptions="End"
+               VerticalOptions="Start"
+               Text="Yamaguti, Naoya"
+               FontSize="12" />
+    </VerticalStackLayout>
+
+</ContentPage>
