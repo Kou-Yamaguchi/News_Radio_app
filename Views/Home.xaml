@@ -3,5 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="News_Radio_app.Views.Home"
              Title="Home">
-        <Button Text="test"/>
+
+    <VerticalStackLayout>
+        <Label HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Text="Welcome News Radio App!!"
+               FontSize="30" />
+        
+        <BoxView Color="Black"
+                 HeightRequest="2"
+                 HorizontalOptions="Fill" />
+
+        <Label HorizontalOptions="End"
+               VerticalOptions="Start"
+               Text="Yamaguti, Naoya"
+               FontSize="12" />
+    </VerticalStackLayout>
+
 </ContentPage>
