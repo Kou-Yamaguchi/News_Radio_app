@@ -15,6 +15,14 @@
                 IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}"/>
     </ContentPage.ToolbarItems>
 
+    <!-- <VerticalStackLayout>
+        <Label 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="You can write record and delete some message"
+            FontSize="20"/>
+    </VerticalStackLayout> -->
+
     <!-- Display notes in a list -->
     <CollectionView x:Name="notesCollection"
                     ItemsSource="{Binding AllNotes}"
