@@ -11,19 +11,19 @@ public class AboutViewModel
   public string Message => "This app is written in XAML and C# with .NET MAUI.";
   public ICommand ShowMoreInfoCommand { get; }
 
-  public ICommand MoveHomeCommand { get; }
+  public ICommand MoveTopCommand { get; }
 
   public AboutViewModel()
   {
     ShowMoreInfoCommand = new AsyncRelayCommand(ShowMoreInfo);
-    MoveHomeCommand = new AsyncRelayCommand(MoveHome);
+    MoveTopCommand = new AsyncRelayCommand(MoveTop);
   }
 
   async Task ShowMoreInfo() =>
       await Launcher.Default.OpenAsync(MoreInfoUrl);
 
-  private async Task MoveHome()
+  private async Task MoveTop()
   {
-    await Shell.Current.GoToAsync(nameof(Views.Home));
+    await Shell.Current.GoToAsync(nameof(Views.TopPage));
   }
 }

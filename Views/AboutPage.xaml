@@ -27,6 +27,6 @@
         <Button Text="Learn more..."
                         Command="{Binding ShowMoreInfoCommand}"/>
         <Button Text="Home"
-                        Command="{Binding MoveHomeCommand}"/>
+                        Command="{Binding MoveTopCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
