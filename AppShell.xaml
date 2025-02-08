@@ -4,9 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:News_Radio_app.Views"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:News_Radio_app.Views">
 
+    <!-- TabBarの部分 -->
     <TabBar>
+        <ShellContent
+            Title="Top"
+            ContentTemplate="{DataTemplate views:TopPage}"
+            Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}"/>
+
         <ShellContent
             Title="Notes"
             ContentTemplate="{DataTemplate views:AllNotesPage}"
@@ -18,8 +24,19 @@
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}"/>
 
         <ShellContent
-            Title="Top"
-            ContentTemplate="{DataTemplate views:TopPage}"
+            Title="About2"
+            ContentTemplate="{DataTemplate views:AboutPage}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}"/>
     </TabBar>
+
+    <!-- MiniPlayerViewを常に表示させる部分 -->
+    <ShellContent Title="MiniPlayer">
+        <Grid VerticalOptions="End" HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <local:MiniPlayerView Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center"/>
+        </Grid>
+    </ShellContent>
+
 </Shell>
