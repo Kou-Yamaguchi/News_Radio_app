@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:News_Radio_app.Views"
              >
 
-    <!-- <ScrollView>
+    <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -26,18 +26,13 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
-            <Button
+            <!-- <Button
                 x:Name="CounterBtn"
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill" /> -->
         </VerticalStackLayout>
-    </ScrollView> -->
-
-<Grid RowDefinitions="*,Auto">
-    <Shell/>
-    <local:MiniPlayerView Grid.Row="1"/>
-</Grid>
+    </ScrollView>
 
 </ContentPage>

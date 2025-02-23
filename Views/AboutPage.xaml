@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:News_Radio_app.ViewModels"
+             xmlns:controls="clr-namespace:News_Radio_app.Controls"
              x:Class="News_Radio_app.Views.AboutPage"
              x:DataType="viewModels:AboutViewModel"
              Title="AboutPage">
@@ -28,5 +29,8 @@
                         Command="{Binding ShowMoreInfoCommand}"/>
         <Button Text="Home"
                         Command="{Binding MoveTopCommand}"/>
+        <Grid RowDefinitions="*, Auto">
+                <controls:MiniPlayerView Grid.Row="1" />
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

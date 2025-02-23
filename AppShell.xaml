@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:News_Radio_app.Views"
-    xmlns:local="clr-namespace:News_Radio_app.Views">
+    xmlns:controls="clr-namespace:News_Radio_app.Controls">
 
     <!-- TabBarの部分 -->
     <TabBar>
@@ -35,7 +35,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <local:MiniPlayerView Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center"/>
+            <controls:MiniPlayerView Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center"/>
         </Grid>
     </ShellContent>
 
