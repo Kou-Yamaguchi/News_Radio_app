@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="News_Radio_app.Views.CloudPage"
+             Title="CloudPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Cloud関連の記事をたくさん表示します"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Button Text="article1" HeightRequest="15" CornerRadius="0" Margin="1" Clicked="On_article_Clicked" VerticalOptions="End"/>
+            <Button Text="article2" HeightRequest="15" CornerRadius="0" Margin="1" Clicked="On_article_Clicked" VerticalOptions="End"/>
+
+    </VerticalStackLayout>
+</ContentPage>
